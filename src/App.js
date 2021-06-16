@@ -9,6 +9,7 @@ import { ThemeProvider } from "styled-components";
 const Header = lazy(() => import("./Componenents/Header"));
 const Home = lazy(() => import("./Componenents/Home"));
 const Footer = lazy(() => import("./Componenents/Footer"));
+const Carousel = lazy(() => import("./Componenents/Carousel"));
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Suspense fallback={<div>Loading</div>}>
           <Header />
           <Switch>
+          <Route path="/carousel">
+              <Carousel/>
+            </Route>
+            
             <Route path="/">
               <Home />
             </Route>

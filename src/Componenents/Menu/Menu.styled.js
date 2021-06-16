@@ -14,7 +14,7 @@ export const MenuContainer = styled.div`
   top: 0;
   z-index: 2;
   transform: ${({ openMenu }) =>
-    openMenu ? "translateY(0)" : "translateY(-100%)"};
+    openMenu ? "translateX(0)" : "translateX(-100%)"};
 
   a {
     color: ${({ theme }) => theme.primaryLight};
