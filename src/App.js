@@ -7,8 +7,8 @@ import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 
 const Header = lazy(() => import("./Componenents/Header"));
+const Home = lazy(() => import("./Componenents/Home"));
 const Footer = lazy(() => import("./Componenents/Footer"));
-
 
 function App() {
   return (
@@ -17,6 +17,11 @@ function App() {
         <GlobalStyle />
         <Suspense fallback={<div>Loading</div>}>
           <Header />
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
           <Footer />
         </Suspense>
       </ThemeProvider>

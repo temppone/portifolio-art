@@ -12,14 +12,18 @@ export const MenuContainer = styled.div`
   transition: transform 0.1s ease-in-out;
   left: 0;
   top: 0;
-  transform: ${({openMenu}) => openMenu ? 'translateY(0)' : 'translateY(-100%)'} ;
+  z-index: 2;
+  transform: ${({ openMenu }) =>
+    openMenu ? "translateY(0)" : "translateY(-100%)"};
 
+  a {
+    color: ${({ theme }) => theme.primaryLight};
+    transition: transform 0.3 linear;
+    font-size: 2rem;
+    padding: 2rem;
+  }
 
+  
 `;
 
-export const MenuLink = styled.a`
-  color: ${({ theme }) => theme.primaryLight};
-  transition: transform 0.3 linear;
-  font-size: 3rem;
-  padding: 3rem;
-`;
+export const MenuLink = styled.a``;

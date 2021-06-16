@@ -1,12 +1,13 @@
 import React from "react";
-import { MenuContainer, MenuLink } from "./Menu.styled";
+import { Link } from "react-router-dom";
+import { MenuContainer } from "./Menu.styled";
 
 const Menu = ({ openMenu }) => {
   return (
     <MenuContainer openMenu={openMenu}>
-      <MenuLink href="/">Início</MenuLink>
-      <MenuLink href="/">Sobre</MenuLink>
-      <MenuLink href="/">Contato</MenuLink>
+      <Link href="/">Início</Link>
+      <Link href="/">Sobre</Link>
+      <Link href="/">Contato</Link>
     </MenuContainer>
   );
 };

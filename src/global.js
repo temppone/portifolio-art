@@ -9,9 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
     box-sizing: border-box;
   }
-
-
-
+   
   a{
   text-decoration: none;
   color: ${({ theme }) => theme.primaryDark};
