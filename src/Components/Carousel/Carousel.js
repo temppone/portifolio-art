@@ -3,6 +3,7 @@ TODO
 Hover que mostra as setas pra cada lado
 Alguma forma de colocar os itens do centro do carousel no centro com a borda do anterior e do próximo sendo mostrada na tela
 Scroll com o dedo no celular
+Ou arrumar uma forma de voltar ao início sem que mostre todo o scroll até o início
 */
 
 import React from "react";

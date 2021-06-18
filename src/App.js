@@ -2,14 +2,15 @@ import "./App.css";
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { GlobalStyle } from "./global";
-import { Loading } from "./Componenents/Loading";
+import { Loading } from "./Components/Loading";
 import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 
-const Header = lazy(() => import("./Componenents/Header"));
-const Home = lazy(() => import("./Componenents/Home"));
-const Footer = lazy(() => import("./Componenents/Footer"));
-const Carousel = lazy(() => import("./Componenents/Carousel"));
+const Header = lazy(() => import("./Components/Header"));
+const Home = lazy(() => import("./Components/Home"));
+const Footer = lazy(() => import("./Components/Footer"));
+const Carousel = lazy(() => import("./Components/Carousel"));
+const Login = lazy(() => import("./Components/Login"));
 
 function App() {
   return (
@@ -19,10 +20,13 @@ function App() {
         <Suspense fallback={<div>Loading</div>}>
           <Header />
           <Switch>
-          <Route path="/carousel">
-              <Carousel/>
+            <Route path="/carousel">
+              <Carousel />
             </Route>
-            
+
+            <Route path="/Login">
+              <Login />
+            </Route>
             <Route path="/">
               <Home />
             </Route>
