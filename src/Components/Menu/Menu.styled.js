@@ -22,8 +22,6 @@ export const MenuContainer = styled.div`
     font-size: 2rem;
     padding: 2rem;
   }
-
-  
 `;
 
 export const MenuLink = styled.a``;

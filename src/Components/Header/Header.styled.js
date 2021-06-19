@@ -9,7 +9,7 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 1rem 2rem;
 `;
 
 export const HeaderLogo = styled.div`

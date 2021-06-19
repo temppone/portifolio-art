@@ -7,6 +7,12 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonBox = styled.button`
-  background: ${({ theme }) => theme.primaryLight};
+  background: ${({ theme }) => theme.secundaryLight};
   color: ${({ theme }) => theme.primaryDark};
+  transition: 0.1s ease-in-out;
+
+
+  &:hover {
+    background: ${({ theme }) => theme.primaryHover};
+  }
 `;

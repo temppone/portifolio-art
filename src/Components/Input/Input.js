@@ -1,9 +1,10 @@
 import React from "react";
 import { InputBox, InputLabel, InputContainer } from "./Input.styled";
+import { FlexContainer } from "../../shared/SharedStyles";
 
 const Input = ({ id, label, value, setValue, ...props }) => {
   return (
-    <InputContainer>
+    <FlexContainer flexDirection="column" justfyContent="center">
       <InputLabel htmlFor={id}>{label}</InputLabel>
       <InputBox
         type="text"
@@ -13,7 +14,7 @@ const Input = ({ id, label, value, setValue, ...props }) => {
         id={id}
         {...props}
       ></InputBox>
-    </InputContainer>
+    </FlexContainer>
   );
 };
 

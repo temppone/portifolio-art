@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const LoginContainer = styled.form`
-  width: 100%;
+export const LoginContainer = styled.div`
+  margin: 0 auto;
+`;
 
-`
+export const LoginTitle = styled.h2`
+  padding: 1rem;
+`;

@@ -1,5 +1,5 @@
 import React from "react";
-import LinkBox from "../LinkBox/LinkBox";
+import LinkBox from "../../Components/LinkBox";
 
 const Home = () => {
   return (

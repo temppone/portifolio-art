@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LinkBoxContainer = styled.div`
-  width: 100%;
+  width: 95%;
 `;
 
 export const LinkBoxItem = styled.a`
@@ -11,7 +11,15 @@ export const LinkBoxItem = styled.a`
   align-content: center;
   align-items: center;
   width: 90%;
-  margin: 1rem auto 1rem auto;
+  margin: 0 auto 0 auto;
+
+  &:after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: ${({ theme }) => theme.primaryLight};
+    margin: 1rem 0;
+  }
 `;
 
 export const LinkBoxItemImg = styled.img`

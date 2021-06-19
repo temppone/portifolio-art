@@ -7,10 +7,10 @@ import { theme } from "./theme";
 import { ThemeProvider } from "styled-components";
 
 const Header = lazy(() => import("./Components/Header"));
-const Home = lazy(() => import("./Components/Home"));
+const Home = lazy(() => import("./pages/Home"));
 const Footer = lazy(() => import("./Components/Footer"));
 const Carousel = lazy(() => import("./Components/Carousel"));
-const Login = lazy(() => import("./Components/Login"));
+const Login = lazy(() => import("./pages/Login"));
 
 function App() {
   return (

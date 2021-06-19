@@ -11,7 +11,7 @@ const Header = () => {
       <HeaderPage>
         <HeaderContent>
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
-          <HeaderLogo>Gustavo Tempone</HeaderLogo>
+          <HeaderLogo>TEMPPONE</HeaderLogo>
         </HeaderContent>
       </HeaderPage>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
