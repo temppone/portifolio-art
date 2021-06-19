@@ -1,10 +1,11 @@
 import React from "react";
 import { ButtonBox } from "./Button.styled";
 import { FlexContainer } from "../../shared/SharedStyles";
-const Button = ({ ButtonName }) => {
+
+const Button = ({ buttonName, ...props }) => {
   return (
     <FlexContainer justifyContent="flex-end">
-      <ButtonBox>{ButtonName}</ButtonBox>
+      <ButtonBox {...props}>{buttonName}</ButtonBox>
     </FlexContainer>
   );
 };

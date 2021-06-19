@@ -1,4 +1,4 @@
-import styled, { ThemeContext } from "styled-components";
+import styled from "styled-components";
 
 export const InputLabel = styled.label`
   display: block;
@@ -15,10 +15,19 @@ export const InputBox = styled.input`
   width: 100%;
   transition: 0.2s ease-in-out;
   background: ${({ theme }) => theme.secundaryDark};
-  border: solid 0.1rem ${({theme}) => theme.tertiaryDark};
+  color: ${({ theme }) => theme.primaryLight};
+
+  border: solid 0.1rem
+    ${({ inputError, theme }) =>
+      inputError ? theme.warningError : theme.tertiaryDark};
 
   &:focus {
-    background: ${({theme}) => theme.tertiaryDark};
-    border: solid 0.1rem ${({theme}) => theme.tertiaryLight};
+    background: ${({ theme }) => theme.tertiaryDark};
+    border: solid 0.1rem ${({ theme }) => theme.tertiaryLight};
   }
 `;
+
+  // export const InputError = styled.p`
+  //   padding-top: 0.3rem;
+  //   color: ${({ theme }) => theme.warningError};
+  // `;
