@@ -19,13 +19,11 @@ export const InputBox = styled.input`
 
   border: solid 0.1rem
     ${({ inputError, theme }) =>
-      inputError === true
-        ? console.log(theme.warningError)
-        : theme.tertiaryDark};
+      inputError ? theme.warningError : theme.tertiaryDark};
 
   &:focus {
     background: ${({ theme }) => theme.tertiaryDark};
-    border: solid 0.1rem ${({ theme }) => theme.tertiaryLight};
+    /* border: solid 0.1rem ${({ theme }) => theme.tertiaryLight}; */
   }
 `;
 

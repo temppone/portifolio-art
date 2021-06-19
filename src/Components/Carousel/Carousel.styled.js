@@ -7,6 +7,8 @@ export const CarouselContainer = styled.div`
   height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 
   button {
     position: absolute;
@@ -21,13 +23,13 @@ export const CarouselContainer = styled.div`
 `;
 
 export const CarouselItem = styled.div`
-  padding-left: 1.4rem;
-  min-width: 84%;
-  max-width: 84%;
+  padding: 0 0.5rem;
+  min-width: 90%;
   height: 80vh;
   align-items: center;
   transition: 0.5s;
   transform: ${({ x }) => `translateX(${x}%)`};
+  scroll-snap-align: center;
 `;
 
 export const CarouselImgTitle = styled.h2`
@@ -40,6 +42,7 @@ export const CarouselImgTitle = styled.h2`
 export const CarouselImg = styled.img`
   width: 100%;
   background: violet;
+  object-fit: cover;
 `;
 
 export const ButtonLeft = styled.button`

@@ -7,10 +7,9 @@ export const theme = {
   tertiaryLight: "#d8d8d8",
   primaryHover: "#ffffff",
 
-  warningError:'#BB4643',
-  warningAlert:'##F7DB38',
-  warningSuccess:'##19C749',
-
+  warningError: "#BB4643",
+  warningAlert: "#F7DB38",
+  warningSuccess: "#19C749",
 };
 
 export const breakPoints = {
