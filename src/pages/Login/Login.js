@@ -11,11 +11,21 @@ import { LoginContainerForm, LoginTitle } from "./Login.styled";
 
 const Login = () => {
   const schema = yup.object().shape({
-    user: yup.string().min(3).required(),
-    password: yup.string().min(8).required("Requerido"),
+    user: yup
+      .string()
+      .min(3, "Pelo menos 3 letras aqui")
+      .required("Campo necessário"),
+    password: yup
+      .string()
+      .min(8, "Pelo menos 8 caracters aqui")
+      .required("Campo necessário"),
   });
 
-  const { register, handleSubmit, errors } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
     resolver: yupResolver(schema),
   });
 
@@ -46,8 +56,8 @@ const Login = () => {
           type="text"
           placeholder="Digite seu usuário"
           register={register}
+          inputError={errors.user?.message}
         />
-        {errors?.user && <p>{errors?.user.message}</p>}
 
         <Input
           name="password"
@@ -56,9 +66,8 @@ const Login = () => {
           type="password"
           placeholder="Digite sua senha"
           register={register}
+          inputError={errors.password?.message}
         />
-        {console.log(errors?.message)}
-        <p>{errors?.password?.message}</p>
 
         <Button
           type="submit"

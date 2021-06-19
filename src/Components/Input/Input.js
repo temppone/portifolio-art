@@ -1,8 +1,8 @@
 import React from "react";
-import { InputBox, InputLabel } from "./Input.styled";
+import { InputBox, InputLabel, InputError } from "./Input.styled";
 import { FlexContainer } from "../../shared/SharedStyles";
 
-const Input = ({ name, label, register, ...props }) => {
+const Input = ({ name, label, register, inputError, ...props }) => {
   return (
     <FlexContainer flexDirection="column" justfyContent="center">
       <InputLabel htmlFor={name}>{label}</InputLabel>
@@ -11,6 +11,7 @@ const Input = ({ name, label, register, ...props }) => {
         {...register(`${name}`, { required: true })}
         {...props}
       />
+      <InputError>{inputError}</InputError>
     </FlexContainer>
   );
 };

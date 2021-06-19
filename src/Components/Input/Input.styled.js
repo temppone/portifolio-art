@@ -19,7 +19,9 @@ export const InputBox = styled.input`
 
   border: solid 0.1rem
     ${({ inputError, theme }) =>
-      inputError ? theme.warningError : theme.tertiaryDark};
+      inputError === true
+        ? console.log(theme.warningError)
+        : theme.tertiaryDark};
 
   &:focus {
     background: ${({ theme }) => theme.tertiaryDark};
@@ -27,7 +29,7 @@ export const InputBox = styled.input`
   }
 `;
 
-  // export const InputError = styled.p`
-  //   padding-top: 0.3rem;
-  //   color: ${({ theme }) => theme.warningError};
-  // `;
+export const InputError = styled.p`
+  padding-top: 0.3rem;
+  color: ${({ theme }) => theme.warningError};
+`;
