@@ -7,20 +7,15 @@ export const DndContainer = styled.div`
   padding: 1rem;
 `;
 
-export const DndContent = styled.div`
-  padding: 0.5rem;
-  background: #333;
-`;
+// export const DndItem = styled.div`
+//   padding: 1rem;
+//   margin: 0.4rem;
+//   background: tomato;
 
-export const DndItem = styled.div`
-  padding: 1rem;
-  margin: 0.4rem;
-  background: tomato;
-
-  ${(props) =>
-    props.isDragging &&
-    css`
-      border: 2px dashed ${({ theme }) => theme.primaryLight};
-      padding: 1rem;
-    `}
-`;
+//   ${(props) =>
+//     props.isDragging &&
+//     css`
+//       border: 2px dashed ${({ theme }) => theme.primaryLight};
+//       padding: 1rem;
+//     `}
+// `;
