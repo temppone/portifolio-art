@@ -21,6 +21,8 @@ const ImgContainerDnd = ({ imgUrl }) => {
   const [dragImgs, setDragImgs] = React.useState(imgs);
 
   const handleDragEnd = (result) => {
+    if (!result.destination) return;
+
     //Transformo items em um array com as imagens
     const items = Array.from(imgs);
     console.log(items);
