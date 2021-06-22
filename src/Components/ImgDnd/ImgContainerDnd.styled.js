@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 export const ImgsContainer = styled.div`
   background: turquoise;
@@ -16,7 +16,7 @@ export const ImgContainer = styled.div`
   cursor: grab;
 
   @media (min-width: 600px) {
-    width: 15%;
+    width: 20%;
   }
 `;
 
