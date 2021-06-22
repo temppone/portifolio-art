@@ -8,17 +8,10 @@ import * as yup from 'yup';
 import { FlexContainer } from '../../shared/SharedStyles';
 import { theme } from '../../theme';
 import { LoginContainerForm, LoginTitle } from './Login.styled';
-import { TOKEN_POST, USER_GET } from '../../api';
+import { UserContext } from '../../shared/UserContext';
 
 const Login = () => {
-  React.useEffect(() => {
-    const token = window.localStorage.getItem('token');
-
-    if (token) {
-      getUser(token);
-      console.log(token);
-    }
-  }, []);
+  const { userLogin } = React.useContext(UserContext);
 
   const schema = yup.object().shape({
     user: yup
@@ -39,30 +32,23 @@ const Login = () => {
     resolver: yupResolver(schema),
   });
 
-  const getUser = async (token) => {
-    const { url, options } = USER_GET(token);
-
-    const response = await fetch(url, options);
-
-    const json = await response.json();
-
-    console.log(json);
-  };
-
   const loginSubmit = async (login) => {
-    console.log(login.user, login.password);
-    const { url, options } = TOKEN_POST({
-      username: login.user,
-      password: login.password,
-    });
-
+    userLogin(login.user, login.password);
     console.log(login.user, login.password);
 
-    const response = await fetch(url, options);
-    const json = await response.json();
-    window.localStorage.setItem('token', json.token);
-    getUser(json.token);
-    console.log(json);
+    // console.log(login.user, login.password);
+    // const { url, options } = TOKEN_POST({
+    //   username: login.user,
+    //   password: login.password,
+    // });
+
+    // console.log(login.user, login.password);
+
+    // const response = await fetch(url, options);
+    // const json = await response.json();
+    // window.localStorage.setItem('token', json.token);
+    // getUser(json.token);
+    // console.log(json);
 
     // const {data} = await axios.post(url, options);
     // const json = await data.json;
@@ -85,6 +71,7 @@ const Login = () => {
         width="80%"
         margin="0 auto"
       >
+        
         <LoginTitle>Login</LoginTitle>
         <Input
           name="user"
