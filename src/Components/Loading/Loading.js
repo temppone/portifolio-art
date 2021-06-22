@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import { LoadingContainer, LoadingContent } from './Loading.styled';
 
 const Loading = () => {
-  return <div>Ta ino, calmai</div>;
+  return (
+    <LoadingContainer>
+      <LoadingContent>Ta ino, calmai</LoadingContent>
+    </LoadingContainer>
+  );
 };
 
 export default Loading;

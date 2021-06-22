@@ -2,25 +2,25 @@ import './App.css';
 import { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalStyle } from './global';
-import { Loading } from './Components/Loading';
+import Loading from './Components/Loading';
 import { theme } from './theme';
 import { ThemeProvider } from 'styled-components';
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
+import { UserStorage } from './shared/UserContext';
 
 const Header = lazy(() => import('./Components/Header'));
 const Home = lazy(() => import('./pages/Home'));
 const Footer = lazy(() => import('./Components/Footer'));
 const Carousel = lazy(() => import('./Components/Carousel'));
 const Login = lazy(() => import('./pages/Login'));
+const Painel = lazy(() => import('./pages/Painel'));
 
 function App() {
   return (
     <Router>
-      <ThemeProvider theme={theme}>
-        <DndProvider backend={HTML5Backend}>
+      <UserStorage>
+        <ThemeProvider theme={theme}>
           <GlobalStyle />
-          <Suspense fallback={<div>Loading</div>}>
+          <Suspense fallback={<Loading></Loading>}>
             <Header />
             <Switch>
               <Route path="/carousel">
@@ -31,14 +31,18 @@ function App() {
                 <Login />
               </Route>
 
+              <Route path="/Painel">
+                <Painel />
+              </Route>
+
               <Route path="/">
                 <Home />
               </Route>
             </Switch>
             <Footer />
           </Suspense>
-        </DndProvider>
-      </ThemeProvider>
+        </ThemeProvider>
+      </UserStorage>
     </Router>
   );
 }
