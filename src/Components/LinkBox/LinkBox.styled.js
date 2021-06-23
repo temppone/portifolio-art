@@ -1,20 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const LinkBoxContainer = styled.div`
-  width: 95%;
-`;
-
-export const LinkBoxItem = styled.a`
+export const NavLink = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 90%;
-  margin: 0 auto 0 auto;
+  width: 80%;
+  background: ${({ secundaryDark }) => secundaryDark};
 
   &:after {
-    content: "";
+    content: '';
     width: 50%;
     height: 2px;
     background: ${({ theme }) => theme.primaryLight};

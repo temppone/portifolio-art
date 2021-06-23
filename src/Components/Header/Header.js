@@ -14,9 +14,7 @@ const Header = () => {
         <HeaderContent>
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
           <HeaderLogo>TEMPPONE</HeaderLogo>
-
-          <p>{data && data.username}</p>
-          {console.log(data)}
+          {data && <p>{data.username}</p>}
         </HeaderContent>
       </HeaderPage>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />

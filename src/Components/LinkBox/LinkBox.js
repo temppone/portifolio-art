@@ -1,27 +1,24 @@
-import React from "react";
-import {
-  LinkBoxContainer,
-  LinkBoxItem,
-  LinkBoxItemImg,
-  LinkBoxItemTitle,
-} from "./LinkBox.styled";
+import React from 'react';
+import {  LinkBoxItemImg, LinkBoxItemTitle, NavLink } from './LinkBox.styled';
+import { Link } from 'react-router-dom';
 
-import { FlexContainer } from "../../shared/SharedStyles";
+import { FlexContainer } from '../../shared/SharedStyles';
 
 const LinkBox = () => {
   return (
     <FlexContainer
       flexDirection="column"
-      margin="0"
+      justifyContent="center"
+      alignItems="center"
     >
-      <LinkBoxItem>
-        <LinkBoxItemImg src="https://scontent.fjdf2-2.fna.fbcdn.net/v/t1.6435-9/120095754_3238979462865458_2272860186753229185_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Dzpg8n34_aoAX98GDB0&_nc_ht=scontent.fjdf2-2.fna&oh=0448b910149bf61f7beda10b75c3c859&oe=60D05208"></LinkBoxItemImg>
+      <NavLink>
+        <LinkBoxItemImg src="https://source.unsplash.com/random/1000x1000"></LinkBoxItemImg>
         <LinkBoxItemTitle>2021</LinkBoxItemTitle>
-      </LinkBoxItem>
-      <LinkBoxItem>
-        <LinkBoxItemImg src="https://scontent.fjdf2-2.fna.fbcdn.net/v/t1.6435-9/120095754_3238979462865458_2272860186753229185_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=Dzpg8n34_aoAX98GDB0&_nc_ht=scontent.fjdf2-2.fna&oh=0448b910149bf61f7beda10b75c3c859&oe=60D05208"></LinkBoxItemImg>
-        <LinkBoxItemTitle>2021</LinkBoxItemTitle>
-      </LinkBoxItem>
+      </NavLink>
+      <NavLink>
+        <LinkBoxItemImg src="https://source.unsplash.com/random/999x999"></LinkBoxItemImg>
+        <LinkBoxItemTitle>2020</LinkBoxItemTitle>
+      </NavLink>
     </FlexContainer>
   );
 };

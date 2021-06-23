@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderPage = styled.header`
-  height: 80px;
+  height: 70px;
   width: 100%;
 `;
 

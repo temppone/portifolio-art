@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FlexContainer = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ export const FlexContainer = styled.div`
 
   margin: ${({ margin }) => margin};
 
-  padding: 1rem;
+  padding: ${({ padding }) => padding};
 
   width: ${({ width }) => width};
 
