@@ -6,8 +6,8 @@ const Image = ({ alt, ...props }) => {
   const [skeletonLoading, setSkeletonLoading] = React.useState(true);
 
   const handleLoad = ({ target }) => {
-    setSkeletonLoading(true);
-    target.style.opacity = 0;
+    setSkeletonLoading(false);
+    target.style.opacity = 1;
   };
 
   return (

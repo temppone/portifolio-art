@@ -5,7 +5,8 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ImgItem = styled.img`
-  max-width: 100%;
+  width: 350px;
+  height: 350px;
   display: block;
   grid-area: 1/1;
   opacity: 0;
@@ -13,8 +14,10 @@ export const ImgItem = styled.img`
 `;
 
 export const ImgSkeleton = styled.div`
+  display: block;
   grid-area: 1/1;
-  height: 100%;
+  height: 350px;
+  width: 350px;
   background-image: linear-gradient(
     90deg,
     ${({ theme }) => theme.secundaryDark} 0px,
