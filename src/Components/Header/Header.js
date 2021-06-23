@@ -13,7 +13,7 @@ const Header = () => {
       <HeaderPage>
         <HeaderContent>
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
-          <HeaderLogo>TEMPPONE</HeaderLogo>
+          <HeaderLogo>Brand Name</HeaderLogo>
           {data && <p>{data.username}</p>}
         </HeaderContent>
       </HeaderPage>

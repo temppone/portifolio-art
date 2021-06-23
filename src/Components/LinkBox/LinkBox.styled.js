@@ -7,15 +7,25 @@ export const NavLink = styled(Link)`
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 80%;
+  width: 85%;
   background: ${({ secundaryDark }) => secundaryDark};
 
-  &:after {
+  &:nth-child(odd):after {
     content: '';
     width: 50%;
     height: 2px;
     background: ${({ theme }) => theme.primaryLight};
     margin: 1rem 0;
+    animation: 1s growUpWidth linear;
+
+    @keyframes growUpWidth {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 50%;
+      }
+    }
   }
 `;
 

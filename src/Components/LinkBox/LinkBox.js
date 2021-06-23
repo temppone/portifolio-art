@@ -12,11 +12,11 @@ const LinkBox = () => {
       alignItems="center"
     >
       <NavLink>
-        <LinkBoxItemImg src="https://source.unsplash.com/random/1000x1000"></LinkBoxItemImg>
+        <LinkBoxItemImg src="https://source.unsplash.com/random/1000x1000/?art"></LinkBoxItemImg>
         <LinkBoxItemTitle>2021</LinkBoxItemTitle>
       </NavLink>
       <NavLink>
-        <LinkBoxItemImg src="https://source.unsplash.com/random/999x999"></LinkBoxItemImg>
+        <LinkBoxItemImg src="https://source.unsplash.com/random/999x999/?art"></LinkBoxItemImg>
         <LinkBoxItemTitle>2020</LinkBoxItemTitle>
       </NavLink>
     </FlexContainer>
