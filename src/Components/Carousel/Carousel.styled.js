@@ -4,7 +4,7 @@ export const CarouselContainer = styled.div`
   display: flex;
   margin-top: 2rem;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
@@ -41,7 +41,6 @@ export const CarouselImgTitle = styled.h2`
 
 export const CarouselImg = styled.img`
   width: 100%;
-  background: violet;
   object-fit: cover;
 `;
 

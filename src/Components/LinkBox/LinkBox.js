@@ -1,5 +1,5 @@
 import React from 'react';
-import {  LinkBoxItemImg, LinkBoxItemTitle, NavLink } from './LinkBox.styled';
+import { LinkBoxItemImg, LinkBoxItemTitle, NavLink } from './LinkBox.styled';
 import { Link } from 'react-router-dom';
 
 import { FlexContainer } from '../../shared/SharedStyles';
@@ -12,11 +12,17 @@ const LinkBox = () => {
       alignItems="center"
     >
       <NavLink>
-        <LinkBoxItemImg src="https://source.unsplash.com/random/1000x1000/?art"></LinkBoxItemImg>
+        <LinkBoxItemImg
+          alt="imagem de link para álbum"
+          src="https://source.unsplash.com/random/1000x1000/?art"
+        ></LinkBoxItemImg>
         <LinkBoxItemTitle>2021</LinkBoxItemTitle>
       </NavLink>
       <NavLink>
-        <LinkBoxItemImg src="https://source.unsplash.com/random/999x999/?art"></LinkBoxItemImg>
+        <LinkBoxItemImg
+          alt="imagem de link para álbum"
+          src="https://source.unsplash.com/random/999x999/?art"
+        ></LinkBoxItemImg>
         <LinkBoxItemTitle>2020</LinkBoxItemTitle>
       </NavLink>
     </FlexContainer>

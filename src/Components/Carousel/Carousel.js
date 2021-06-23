@@ -35,7 +35,7 @@ const Carousel = () => {
         return (
           <CarouselItem x={x} key={index}>
             <CarouselImgTitle>{item.imgTitle}</CarouselImgTitle>
-            <CarouselImg src={item.img}></CarouselImg>
+            <CarouselImg src={item.imgUrl}></CarouselImg>
           </CarouselItem>
         );
       })}

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import Image from '../Image/Image';
 
 export const NavLink = styled(Link)`
   display: flex;
@@ -29,13 +30,12 @@ export const NavLink = styled(Link)`
   }
 `;
 
-export const LinkBoxItemImg = styled.img`
+export const LinkBoxItemImg = styled(Image)`
   width: 100%;
-  transition: all 0.5s;
-  opacity: 90%;
+  opacity: 80%;
 
   &:hover {
-    opacity: 70%;
+    opacity: 100%;
   }
 `;
 

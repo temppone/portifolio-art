@@ -14,4 +14,6 @@ export const HeaderContent = styled.div`
 
 export const HeaderLogo = styled.div`
   background: transparent;
+  font-size: 1.8rem;
+  font-weight: bold;
 `;

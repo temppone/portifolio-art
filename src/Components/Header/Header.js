@@ -6,7 +6,7 @@ import { UserContext } from '../../shared/UserContext';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = React.useState(false);
-  const { data } = React.useContext(UserContext);
+  const { data, userLogout } = React.useContext(UserContext);
 
   return (
     <>
@@ -15,6 +15,7 @@ const Header = () => {
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
           <HeaderLogo>Brand Name</HeaderLogo>
           {data && <p>{data.username}</p>}
+          <button onClick={userLogout}></button>
         </HeaderContent>
       </HeaderPage>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />

@@ -4,7 +4,7 @@ import { FlexContainer } from '../../shared/SharedStyles';
 
 const Input = ({ name, label, register, inputError, ...props }) => {
   return (
-    <FlexContainer flexDirection="column" justfyContent="center">
+    <FlexContainer flexDirection="column" justfyContent="center" padding="1rem">
       <InputLabel htmlFor={name}>{label}</InputLabel>
       <InputBox
         name={name}

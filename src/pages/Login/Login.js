@@ -70,8 +70,8 @@ const Login = () => {
         background={theme.secundaryDark}
         width="80%"
         margin="0 auto"
+        padding="2rem"
       >
-        
         <LoginTitle>Login</LoginTitle>
         <Input
           name="user"
