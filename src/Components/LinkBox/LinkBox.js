@@ -3,7 +3,7 @@ import { LinkBoxItemImg, LinkBoxItemTitle, NavLink } from './LinkBox.styled';
 
 const LinkBox = ({ imgAlt, imgBoxItem, LinkBoxTitle, albumId }) => {
   return (
-    <NavLink >
+    <NavLink to={albumId}>
       <LinkBoxItemImg alt={imgAlt} src={imgBoxItem}></LinkBoxItemImg>
       <LinkBoxItemTitle>{LinkBoxTitle}</LinkBoxItemTitle>
     </NavLink>

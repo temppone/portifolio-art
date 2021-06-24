@@ -13,6 +13,7 @@ const Footer = lazy(() => import('./Components/Footer'));
 const Carousel = lazy(() => import('./Components/Carousel'));
 const Login = lazy(() => import('./pages/Login'));
 const Painel = lazy(() => import('./pages/Painel'));
+const Album = lazy(() => import('./Components/Album'));
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
                 <Painel />
               </Route>
 
-              <Route path={'/Album'}>
+              <Route path="/Album/:id">
                 <Album />
               </Route>
 

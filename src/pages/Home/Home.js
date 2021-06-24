@@ -3,7 +3,7 @@ import LinkBox from '../../Components/LinkBox';
 import { FlexContainer } from '../../shared/SharedStyles';
 
 const Home = () => {
-  const [dataImg, setDataImg] = React.useState('');
+  // const [dataImg, setDataImg] = React.useState('');
 
   // React.useEffect(() => {
   //   const getImg = async () => {
@@ -39,13 +39,13 @@ const Home = () => {
       ))} */}
 
       <LinkBox
-      to={`album/dark`}
+        albumId={'album/dark'}
         imgAlt="teste"
         imgBoxItem="https://source.unsplash.com/random/1000x1000?dark"
         LinkBoxTitle="2020"
       />
       <LinkBox
-      to={`album/dark`}
+        albumId={'album/dark'}
         imgAlt="teste"
         imgBoxItem="https://source.unsplash.com/random/1001x1001?dark"
         LinkBoxTitle="2020"
