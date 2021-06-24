@@ -5,8 +5,8 @@ export const ImgWrapper = styled.div`
 `;
 
 export const ImgItem = styled.img`
-  width: 350px;
-  height: 350px;
+  /* width: 350px;
+  height: 350px; */
   display: block;
   grid-area: 1/1;
   opacity: 0;
@@ -14,10 +14,10 @@ export const ImgItem = styled.img`
 `;
 
 export const ImgSkeleton = styled.div`
+  /* height: 350px;
+  width: 350px; */
   display: block;
   grid-area: 1/1;
-  height: 350px;
-  width: 350px;
   background-image: linear-gradient(
     90deg,
     ${({ theme }) => theme.tertiaryDark} 0px,

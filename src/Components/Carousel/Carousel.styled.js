@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "../Image/Image";
 
 export const CarouselContainer = styled.div`
   display: flex;
@@ -39,7 +40,7 @@ export const CarouselImgTitle = styled.h2`
   height: 80px;
 `;
 
-export const CarouselImg = styled.img`
+export const CarouselImg = styled(Image)`
   width: 100%;
   object-fit: cover;
 `;

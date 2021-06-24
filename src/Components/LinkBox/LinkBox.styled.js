@@ -31,7 +31,8 @@ export const NavLink = styled(Link)`
 `;
 
 export const LinkBoxItemImg = styled(Image)`
-  width: 100%;
+  width: 350px;
+  height: 350px;
   opacity: 80%;
 
   &:hover {

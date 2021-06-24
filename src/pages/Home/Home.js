@@ -29,6 +29,8 @@ const Home = () => {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      width="960px"
+      margin="0 auto"
     >
       {/* {dataImg.map((imgItem) => (
         <LinkBox

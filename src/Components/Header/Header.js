@@ -3,7 +3,7 @@ import { HeaderPage, HeaderContent, HeaderLogo } from './Header.styled';
 import Burger from '../Burger';
 import Menu from '../Menu';
 import { UserContext } from '../../shared/UserContext';
-import SwitchButton from '../SwitchButton/SwitchButton';
+// import SwitchButton from '../SwitchButton/SwitchButton';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -16,7 +16,7 @@ const Header = () => {
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
           <HeaderLogo to="/">Brand Name</HeaderLogo>
           {data && <p>{data.username}</p>}
-          <SwitchButton />
+          {/* <SwitchButton /> */}
         </HeaderContent>
       </HeaderPage>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />

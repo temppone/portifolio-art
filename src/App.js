@@ -1,5 +1,5 @@
 import './App.css';
-import { lazy, Suspense } from 'react';
+import { lazy, Suspense, React } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { GlobalStyle } from './global';
 import Loading from './Components/Loading';

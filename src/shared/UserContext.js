@@ -1,5 +1,4 @@
 import React from 'react';
-import { set } from 'react-hook-form';
 import { TOKEN_POST, TOKEN_VALIDATE_POST, USER_GET } from '../api';
 
 export const UserContext = React.createContext();
@@ -60,6 +59,7 @@ export const UserStorage = ({ children }) => {
 
     getUser(token);
   };
+
 
   return (
     <UserContext.Provider value={{ userLogin, userLogout, data }}>
