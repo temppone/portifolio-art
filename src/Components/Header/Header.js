@@ -3,7 +3,7 @@ import { HeaderPage, HeaderContent, HeaderLogo } from './Header.styled';
 import Burger from '../Burger';
 import Menu from '../Menu';
 import { UserContext } from '../../shared/UserContext';
-import { Link } from 'react-router-dom';
+import SwitchButton from '../SwitchButton/SwitchButton';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = React.useState(false);
@@ -15,9 +15,8 @@ const Header = () => {
         <HeaderContent>
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
           <HeaderLogo to="/">Brand Name</HeaderLogo>
-
           {data && <p>{data.username}</p>}
-          <button onClick={userLogout}></button>
+          <SwitchButton />
         </HeaderContent>
       </HeaderPage>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />

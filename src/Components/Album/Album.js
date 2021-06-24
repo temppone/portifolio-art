@@ -5,7 +5,8 @@ import Carousel from '../Carousel'
 const Album = () => {
 
   const params = useParams();
-  console.log(params)
+
+
 
   return (
     <>

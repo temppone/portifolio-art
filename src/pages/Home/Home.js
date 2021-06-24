@@ -39,15 +39,15 @@ const Home = () => {
       ))} */}
 
       <LinkBox
-        albumId={'album/dark'}
+        albumId={'album/art'}
         imgAlt="teste"
-        imgBoxItem="https://source.unsplash.com/random/1000x1000?dark"
-        LinkBoxTitle="2020"
+        imgBoxItem="https://source.unsplash.com/random/1000x1000?art"
+        LinkBoxTitle="2021"
       />
       <LinkBox
-        albumId={'album/dark'}
+        albumId={'album/art'}
         imgAlt="teste"
-        imgBoxItem="https://source.unsplash.com/random/1001x1001?dark"
+        imgBoxItem="https://source.unsplash.com/random/1001x1001?art"
         LinkBoxTitle="2020"
       />
     </FlexContainer>
