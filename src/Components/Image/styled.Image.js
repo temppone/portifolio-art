@@ -20,12 +20,12 @@ export const ImgSkeleton = styled.div`
   width: 350px;
   background-image: linear-gradient(
     90deg,
-    ${({ theme }) => theme.secundaryDark} 0px,
-    ${({ theme }) => theme.primaryDark} 50%,
-    ${({ theme }) => theme.secundaryDark} 100%
+    ${({ theme }) => theme.tertiaryDark} 0px,
+    ${({ theme }) => theme.secundaryDark} 50%,
+    ${({ theme }) => theme.tertiaryDark} 100%
   );
   background-size: 200%;
-  animation: skeleton 4s infinite linear;
+  animation: skeleton 2s infinite linear;
 
   @keyframes skeleton {
     from {
