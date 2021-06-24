@@ -35,6 +35,10 @@ function App() {
                 <Painel />
               </Route>
 
+              <Route path={'/Album'}>
+                <Album />
+              </Route>
+
               <Route path="/">
                 <Home />
               </Route>
