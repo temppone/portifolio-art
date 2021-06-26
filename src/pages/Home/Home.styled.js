@@ -1,4 +1,8 @@
-import styled from "styled-components";
-import {FlexContainer} from "../../shared/SharedStyles"
+import styled from 'styled-components';
+import { FlexContainer } from '../../shared/SharedStyles';
 
-export  styled(FlexContainer)
+export const FlexContainerHome = styled(FlexContainer)`
+  @media (min-width: ${({ theme }) => theme.breapoints.smallMobile}) {
+    background: tomato;
+  }
+`;
