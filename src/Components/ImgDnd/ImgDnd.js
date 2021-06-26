@@ -20,11 +20,11 @@ const ImgContainerDnd = ({ imgUrl }) => {
 
   const [dragImgs, setDragImgs] = React.useState(imgs);
 
-  const handleDragEnd = (result) => {
+  const handleDragEnd = (result, e) => {
     if (!result.destination) return;
 
     //Transformo items em um array com as imagens
-    const items = Array.from(imgs);
+    const items = Array.from(dragImgs);
     console.log(items);
 
     //Deleto o item que eu quero mudar de lugar
@@ -48,7 +48,12 @@ const ImgContainerDnd = ({ imgUrl }) => {
         {(provided) => (
           <ImgsContainer {...provided.droppableProps} ref={provided.innerRef}>
             {dragImgs.map((imgUrl, index) => (
-              <Draggable key={imgUrl} draggableId={imgUrl} index={index}>
+              <Draggable
+                key={imgUrl}
+                onKeyDown={(e) => console.log(e)}
+                draggableId={imgUrl}
+                index={index}
+              >
                 {(provided) => (
                   <ImgContainer
                     {...provided.draggableProps}
