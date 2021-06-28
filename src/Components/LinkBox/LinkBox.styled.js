@@ -10,33 +10,15 @@ export const NavLink = styled(Link)`
   align-items: center;
   width: 85%;
   background: ${({ secundaryDark }) => secundaryDark};
-
-  &:nth-child(odd):after {
-    content: '';
-    width: 50%;
-    height: 2px;
-    background: ${({ theme }) => theme.primaryLight};
-    margin: 1rem 0;
-    animation: 1s growUpWidth linear;
-
-    @keyframes growUpWidth {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 50%;
-      }
-    }
-  }
 `;
 
 export const LinkBoxItemImg = styled(Image)`
   width: 300px;
   height: 300px;
-  opacity: 80%;
+  
 
   &:hover {
-    opacity: 100%;
+    opacity: 80%;
   }
 `;
 

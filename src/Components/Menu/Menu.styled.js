@@ -22,6 +22,13 @@ export const MenuContainer = styled.div`
     font-size: 2rem;
     padding: 2rem;
   }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    a{
+      font-size: 5rem;
+    }
+  }
+
 `;
 
 export const MenuLink = styled.a``;

@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 export const HeaderPage = styled.header`
   height: 70px;
   width: 100%;
+  
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    width: 1280px;
+    margin: 0 auto;
+  }
 `;
 
 export const HeaderContent = styled.div`

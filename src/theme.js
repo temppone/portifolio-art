@@ -12,15 +12,16 @@ export const theme = {
   warningError: '#BB4643',
   warningAlert: '#F7DB38',
   warningSuccess: '#19C749',
+
+  breakpoints: {
+    smallMobile: '425px',
+    mobile: '768px',
+    tablet: '1024px',
+    laptop: '1366px',
+    desktop: '1680px',
+  },
 };
 
-export const breakPoints = {
-  smallMobile: '425px',
-  mobile: '768px',
-  tablet: '1024px',
-  laptop: '1366px',
-  desktop: '1680px',
-};
 
 export const fontSizes = {
   extraSmall: '0.8rem',
