@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkBox from '../../Components/LinkBox';
 import { FlexContainer } from '../../shared/SharedStyles';
-
+import DivBar from '../../Components/DivBar';
 const Home = () => {
   // const [dataImg, setDataImg] = React.useState('');
 
@@ -37,13 +37,15 @@ const Home = () => {
           LinkBoxTitle={imgItem.title}
         />
       ))} */}
-
       <LinkBox
         albumId={'album/art'}
         imgAlt="teste"
         imgBoxItem="https://source.unsplash.com/random/1000x1000?art"
         LinkBoxTitle="2021"
       />
+
+      <DivBar></DivBar>
+
       <LinkBox
         albumId={'album/art'}
         imgAlt="teste"

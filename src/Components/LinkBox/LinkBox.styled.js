@@ -15,10 +15,10 @@ export const NavLink = styled(Link)`
 export const LinkBoxItemImg = styled(Image)`
   width: 300px;
   height: 300px;
-  
+  opacity: 10%;
 
   &:hover {
-    opacity: 80%;
+    opacity: 100%;
   }
 `;
 
