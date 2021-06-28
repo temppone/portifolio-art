@@ -8,7 +8,6 @@ export const NavLink = styled(Link)`
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 85%;
   background: ${({ secundaryDark }) => secundaryDark};
 `;
 
@@ -26,4 +25,8 @@ export const LinkBoxItemTitle = styled.h2`
   position: absolute;
   font-size: 3rem;
   color: ${({ theme }) => theme.primaryLight};
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    font-size: 5rem;
+  }
 `;

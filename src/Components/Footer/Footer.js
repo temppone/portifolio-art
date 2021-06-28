@@ -5,7 +5,7 @@ import { Instagram, Mail, WhatsApp } from '@material-ui/icons';
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterContent>&copy; 2020 todos direitos reservados</FooterContent>
+      <FooterContent>&copy; 2021 todos direitos reservados</FooterContent>
       <FooterContent>
         <ul>
           <li>

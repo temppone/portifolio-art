@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkBox from '../../Components/LinkBox';
-import { FlexContainer } from '../../shared/SharedStyles';
+import {FlexContainerHome} from "./Home.styled"
 import DivBar from '../../Components/DivBar';
 const Home = () => {
   // const [dataImg, setDataImg] = React.useState('');
@@ -25,7 +25,7 @@ const Home = () => {
   // if (!dataImg) return null;
 
   return (
-    <FlexContainer
+    <FlexContainerHome
       flexDirection="column"
       justifyContent="space-between"
       alignItems="center"      
@@ -52,7 +52,7 @@ const Home = () => {
         imgBoxItem="https://source.unsplash.com/random/1001x1001?art"
         LinkBoxTitle="2020"
       />
-    </FlexContainer>
+    </FlexContainerHome>
   );
 };
 

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import Image from "../Image/Image";
+import styled from 'styled-components';
+import Image from '../Image/Image';
 
 export const CarouselContainer = styled.div`
   display: flex;
@@ -11,6 +11,12 @@ export const CarouselContainer = styled.div`
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    width: 1280px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
   button {
     position: absolute;
     top: 50%;
@@ -20,6 +26,11 @@ export const CarouselContainer = styled.div`
     background: transparent;
     color: #fff;
     border: none;
+    @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+      background: ${({ theme }) => theme.primaryLight};
+      height: 5%;
+      width: 3%;
+    }
   }
 `;
 
@@ -31,6 +42,10 @@ export const CarouselItem = styled.div`
   transition: 0.5s;
   transform: ${({ x }) => `translateX(${x}%)`};
   scroll-snap-align: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    min-width: 100%;
+  }
 `;
 
 export const CarouselImgTitle = styled.h2`
@@ -38,11 +53,19 @@ export const CarouselImgTitle = styled.h2`
   margin-bottom: 1.5rem;
   align-self: flex-start;
   height: 80px;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    text-align: center;
+  }
 `;
 
 export const CarouselImg = styled(Image)`
   width: 100%;
   object-fit: cover;
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    width: 50rem;
+    height: 50rem;
+  }
 `;
 
 export const ButtonLeft = styled.button`

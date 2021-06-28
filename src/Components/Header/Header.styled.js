@@ -7,7 +7,7 @@ export const HeaderPage = styled.header`
   
   @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
     width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto;    
   }
 `;
 
@@ -16,6 +16,10 @@ export const HeaderContent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    padding: 1rem 0;
+  }
+
 `;
 
 export const HeaderLogo = styled(Link)`
