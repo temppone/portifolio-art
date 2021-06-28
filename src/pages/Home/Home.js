@@ -27,8 +27,8 @@ const Home = () => {
   return (
     <FlexContainer
       flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
+      justifyContent="space-between"
+      alignItems="center"      
     >
       {/* {dataImg.map((imgItem) => (
         <LinkBox

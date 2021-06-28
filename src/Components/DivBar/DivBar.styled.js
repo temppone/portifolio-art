@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const DivBarContainer = styled.div`
-  width: 50%;
+  width: 10rem;
   height: 2px;
   background: ${({ theme }) => theme.primaryLight};
   margin: 1rem 0;
@@ -12,16 +12,22 @@ export const DivBarContainer = styled.div`
       width: 0;
     }
     100% {
-      width: 50%;
+      width: 10rem;
     }
   }
 
-  @keyframes growUpWidth {
+  @keyframes growUpHeight {
     0% {
-      width: 0;
+      height: 0;
     }
     100% {
-      width: 50%;
+      height: 20rem;
     }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+    width: 2px;
+    height: 20rem;
+    animation: 1s growUpHeight linear;
   }
 `;

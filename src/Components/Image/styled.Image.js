@@ -9,7 +9,6 @@ export const ImgItem = styled.img`
   height: 350px; */
   display: block;
   grid-area: 1/1;
-  opacity: 0;
   transition: 0.2s;
 `;
 
