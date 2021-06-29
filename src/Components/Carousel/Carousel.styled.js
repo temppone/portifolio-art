@@ -26,6 +26,7 @@ export const CarouselContainer = styled.div`
     background: transparent;
     color: #fff;
     border: none;
+    
     @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
       background: ${({ theme }) => theme.primaryLight};
       height: 5%;

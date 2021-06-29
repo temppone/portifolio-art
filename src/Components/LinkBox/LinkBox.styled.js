@@ -9,6 +9,11 @@ export const NavLink = styled(Link)`
   align-content: center;
   align-items: center;
   background: ${({ secundaryDark }) => secundaryDark};
+
+  & > div:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
 `;
 
 export const LinkBoxItemImg = styled(Image)`

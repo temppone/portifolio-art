@@ -14,8 +14,8 @@ export const FlexContainer = styled.div`
   width: ${({ width }) => width};
 
   background: ${({ background }) => background};
-  
-  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
     flex-direction: row;
     width: 1280px;
     margin: 0 auto;
