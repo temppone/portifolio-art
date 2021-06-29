@@ -12,7 +12,7 @@ export const NavLink = styled(Link)`
 
   & > div:hover {
     opacity: 0.5;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 `;
 
