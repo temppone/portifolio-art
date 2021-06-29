@@ -10,6 +10,8 @@ export const NavLink = styled(Link)`
   align-items: center;
   background: ${({ secundaryDark }) => secundaryDark};
 
+
+
   & > div:hover {
     opacity: 0.5;
     transition: 0.3s;
@@ -21,8 +23,13 @@ export const LinkBoxItemImg = styled(Image)`
   height: 300px;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    width: 35rem;
-    height: 35rem;
+    width: 65rem;
+    height: 65rem;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    width: 50rem;
+    height: 50rem;
   }
 `;
 
@@ -31,7 +38,8 @@ export const LinkBoxItemTitle = styled.h2`
   font-size: 3rem;
   color: ${({ theme }) => theme.primaryLight};
 
+
   @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    font-size: 5rem;
+    font-size: 10rem;
   }
 `;

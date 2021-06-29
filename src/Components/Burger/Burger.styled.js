@@ -20,5 +20,11 @@ export const BurgerBars = styled.div`
   margin-bottom: 5px;
   background: ${({ theme }) => theme.primaryLight};
   transition: all 0.3s linear;
-  
+
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+   width: 75px;
+   height: 9px;
+   margin-bottom: 15px;
+  }
 `;
