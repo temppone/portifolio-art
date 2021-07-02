@@ -14,14 +14,13 @@ export const theme = {
   warningSuccess: '#19C749',
 
   breakpoints: {
-    smallMobile: '425px',
-    mobile: '769px',
-    tablet: '1025px',
-    laptop: '1366px',
-    desktop: '1680px',
+    xs: '480px',
+    sm: '600px',
+    md: '801px',
+    lg: '1025px',
+    xl: '1281px',
   },
 };
-
 
 export const fontSizes = {
   extraSmall: '0.8rem',

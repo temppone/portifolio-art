@@ -36,6 +36,7 @@ export const LinkBoxItemImg = styled(Image)`
 export const LinkBoxItemTitle = styled.h2`
   position: absolute;
   font-size: 3rem;
+  text-shadow: 1px 1px #333;
   color: ${({ theme }) => theme.primaryLight};
 
 

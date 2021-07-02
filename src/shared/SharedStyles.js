@@ -15,14 +15,20 @@ export const FlexContainer = styled.div`
 
   background: ${({ background }) => background};
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    width: 80%;
-    margin: 0 auto;
+  @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+    max-width: 599px;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    flex-direction: row;
-    width: 1280px;
-    margin: 0 auto;
+  @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+    max-width: 800px;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    max-width: 1024px;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    max-width: 1280px;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+    max-width: 1380px;
   }
 `;

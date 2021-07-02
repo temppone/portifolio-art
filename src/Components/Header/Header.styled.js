@@ -9,11 +9,6 @@ export const HeaderPage = styled.header`
     height: 140px;
     width: 1280px;
   }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    width: 1280px;
-    margin: 0 auto;
-  }
 `;
 
 export const HeaderContent = styled.div`
@@ -21,16 +16,7 @@ export const HeaderContent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    width: 1090px;
-    margin: 0 auto;
-    padding: 2rem 3rem;
-  }
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.tablet}) {
-    padding: 1rem 0;
-  }
+  background: yellow;
 `;
 
 export const HeaderLogo = styled(Link)`
@@ -44,6 +30,6 @@ export const HeaderLogo = styled(Link)`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-   font-size: 4rem;
+    font-size: 4rem;
   }
 `;
