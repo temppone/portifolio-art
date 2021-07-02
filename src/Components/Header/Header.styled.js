@@ -1,14 +1,9 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import {FlexContainer} from '../../shared/SharedStyles'
 
-export const HeaderPage = styled.header`
+export const HeaderPage = styled(FlexContainer)`
   height: 70px;
-  width: 100%;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    height: 140px;
-    width: 1280px;
-  }
 `;
 
 export const HeaderContent = styled.div`
@@ -17,6 +12,7 @@ export const HeaderContent = styled.div`
   align-items: center;
   padding: 1rem 2rem;
   background: yellow;
+  width: 100%;
 `;
 
 export const HeaderLogo = styled(Link)`

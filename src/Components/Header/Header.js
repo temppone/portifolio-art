@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <>
-      <HeaderPage>
+      <HeaderPage margin="0 auto">
         <HeaderContent>
           <Burger openMenu={openMenu} setOpenMenu={setOpenMenu} />
           <HeaderLogo to="/">Brand Name</HeaderLogo>
