@@ -1,6 +1,9 @@
 # Portifolio para artista
 
-Projeto para treinar as habilidades com React.js, styled components e CRUD.
+#### Portifolio para artista expor suas obras online
+#### Ele mesmo pode gerenciar as obras no site com um login em um dashboard (CRUD)
+#### Gráficos que mostram os níveis de acesso 
+#### Formulário para qualquer pessoa entrar em contato 
 
 
 # O que eu estou usando?
