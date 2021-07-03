@@ -11,7 +11,7 @@ export const HeaderContent = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: yellow;
+  background: transparent;
   width: 100%;
 `;
 

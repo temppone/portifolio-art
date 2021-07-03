@@ -37,6 +37,7 @@ export const DivBarContainer = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 0.15rem;
     height: 20rem;
+    animation: 1s growUpHeight linear;
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {

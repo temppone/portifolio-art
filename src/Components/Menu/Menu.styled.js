@@ -20,14 +20,11 @@ export const MenuContainer = styled.div`
     color: ${({ theme }) => theme.primaryLight};
     transition: transform 0.3 linear;
     font-size: 2rem;
-    padding: 2rem;
+    padding: 2rem 1rem;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
-    a{
-      font-size: 5rem;
-    }
-  }
+
+
 
 `;
 
