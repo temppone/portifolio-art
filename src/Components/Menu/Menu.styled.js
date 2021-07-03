@@ -21,6 +21,9 @@ export const MenuContainer = styled.div`
     openMenu ? 'translateY(0)' : 'translateY(-100%)'};
 
   a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: ${({ theme }) => theme.primaryLight};
     transition: transform 0.3 linear;
     font-size: 2rem;
@@ -32,39 +35,68 @@ export const MenuContainer = styled.div`
     opacity: ${({ openMenu }) => (openMenu ? '1' : '0')};
 
     @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+      width: 90%;
       font-size: 3rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+      width: 80%;      
       font-size: 3.5rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+      width: 70%;
       font-size: 4rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+      width: 60%;
       font-size: 4.5rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+      width: 50%;
       font-size: 5rem;
     }
 
     :hover,
     :hover div {
       transform: scale(1.1);
-      transition: all 0.3s linear;
+      transition: all 0.1s ease-in-out;
     }
   }
 `;
 
-export const SquareMenu = styled.div`
-  width: 0.5rem;
-  height: 0.5rem;
-  background: ${({ theme }) => theme.primaryLight};
-  display: inline-block;
-  transform: translateY(-60%);
-`;
+// export const SquareMenu = styled.div`
+//   width: 0.5rem;
+//   height: 0.5rem;
+//   background: ${({ theme }) => theme.primaryLight};
+//   display: inline-block;
+
+//   @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
+//       width: 0.6rem;
+//       height: 0.6rem;
+//     }
+
+//     @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+//       width: 0.8rem;
+//       height: 0.8rem;
+//     }
+
+//     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+//       width: 1rem;
+//       height: 1rem;
+//     }
+
+//     @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+//       width: 1.2rem;
+//       height: 1.2rem;
+//     }
+
+//     @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
+//       width: 1.4rem;
+//       height: 1.4rem;
+//     }
+// `;
 
 export const MenuLink = styled.a``;

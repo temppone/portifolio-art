@@ -7,13 +7,13 @@ const Menu = ({ openMenu }) => {
   return (
     <MenuContainer openMenu={openMenu}>
       <Link href="/">
-        <SquareMenu /> Início
+        Início
       </Link>
       <Link href="/">
-        <SquareMenu /> Sobre
+        Sobre
       </Link>
       <Link href="/">
-        <SquareMenu /> Contato
+        Contato
       </Link>
     </MenuContainer>
   );
