@@ -29,33 +29,33 @@ export const MenuContainer = styled.div`
     font-size: 2rem;
     padding: 2rem 1rem;
     transition: all 0.8s linear;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
 
     opacity: ${({ openMenu }) => (openMenu ? '1' : '0')};
 
     @media (min-width: ${({ theme }) => theme.breakpoints.xs}) {
-      width: 90%;
+      width: 80%;
       font-size: 3rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-      width: 80%;      
+      width: 70%;      
       font-size: 3.5rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-      width: 70%;
+      width: 50%;
       font-size: 4rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-      width: 60%;
+      width: 30%;
       font-size: 4.5rem;
     }
 
     @media (min-width: ${({ theme }) => theme.breakpoints.xl}) {
-      width: 50%;
+      width: 20%;
       font-size: 5rem;
     }
 

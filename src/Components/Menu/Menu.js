@@ -9,10 +9,10 @@ const Menu = ({ openMenu }) => {
       <Link href="/">
         Início
       </Link>
-      <Link href="/">
+      <Link href="/sobre">
         Sobre
       </Link>
-      <Link href="/">
+      <Link href="/contato">
         Contato
       </Link>
     </MenuContainer>
