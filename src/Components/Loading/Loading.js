@@ -1,10 +1,12 @@
 import React from 'react';
 import { LoadingContainer, LoadingContent } from './Loading.styled';
+import  DivBar  from '../DivBar';
 
 const Loading = () => {
   return (
     <LoadingContainer>
-      <LoadingContent>Ta ino, calmai</LoadingContent>
+      Carregando
+      <DivBar />
     </LoadingContainer>
   );
 };
