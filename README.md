@@ -12,4 +12,4 @@
 
 styled-components | react-hook-form | yup | react-router-dom | react-query
 
-#### [Demo](https://zen-stonebraker-b71437.netlify.app/) (em produção)
+#### [Demo](https://serene-knuth-4bf96a.netlify.app/) (em produção)
