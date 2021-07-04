@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MenuContainer, SquareMenu } from './Menu.styled';
+import { MenuContainer} from './Menu.styled';
 
 
 const Menu = ({ openMenu }) => {

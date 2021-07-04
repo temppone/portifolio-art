@@ -39,8 +39,8 @@ const Carousel = () => {
           </CarouselItem>
         );
       })}
-      <ButtonRight onClick={goRight}></ButtonRight>
-      <ButtonLeft onClick={goLeft}></ButtonLeft>
+      <ButtonRight onClick={goRight}>Next</ButtonRight>
+      <ButtonLeft onClick={goLeft}>Prev</ButtonLeft>
     </CarouselContainer>
   );
 };
